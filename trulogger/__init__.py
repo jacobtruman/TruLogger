@@ -1,5 +1,6 @@
 import os
 import datetime
+import traceback
 
 
 class TruLogger(object):
@@ -28,6 +29,7 @@ class TruLogger(object):
     def __init__(self, params=None):
         self.colorize = True
         self.verbose = False
+        self.traceback = False
         self.log_file = None
         self.log_file_handle = None
 
@@ -85,7 +87,10 @@ class TruLogger(object):
         self._format_and_add_to_log(msg, "WARNING")
 
     def error(self, msg):
-        self._format_and_add_to_log(msg, "ERROR")
+        if self.traceback:
+            self._format_and_add_to_log("{0}\n{1}".format(msg, traceback.extract_stack()), "ERROR")
+        else:
+            self._format_and_add_to_log(msg, "ERROR")
 
     def _format_and_add_to_log(self, msg, type="INFO"):
         if type not in self.log_types:
