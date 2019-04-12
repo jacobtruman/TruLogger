@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='TruLogger',
-    version='1.1.0',
+    version='1.1.1',
     description='Logger package',
     author='Jacob Truman',
     author_email='jacob.truman@gmail.com',

@@ -32,6 +32,7 @@ class TruLogger(object):
         self.traceback = False
         self.log_file = None
         self.log_file_handle = None
+        self.realtime = True
 
         # override any default settings defined in params
         if params is not None:
@@ -120,3 +121,5 @@ class TruLogger(object):
 
         if self.log_file_handle is not None:
             self.log_file_handle.write("{0}\n".format(msg))
+            if self.realtime:
+                self.log_file_handle.flush()
