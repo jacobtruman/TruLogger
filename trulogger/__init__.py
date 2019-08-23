@@ -123,3 +123,4 @@ class TruLogger(object):
             self.log_file_handle.write("{0}\n".format(msg))
             if self.realtime:
                 self.log_file_handle.flush()
+                os.fsync(self.log_file_handle.fileno())
