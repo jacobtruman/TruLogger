@@ -1,3 +1,5 @@
+[![Upload Python Package](https://github.com/jacobtruman/TruLogger/actions/workflows/python-publish.yml/badge.svg)](https://github.com/jacobtruman/TruLogger/actions/workflows/python-publish.yml)
+
 # TruLogger
 
 A simple python log library
