@@ -7,6 +7,7 @@ py-modules = ["trulogger"]
 [project]
 name = 'TruLogger'
 description = 'Logger package'
+long_description = 'Logger package'
 version = '1.1.6'
 
 authors = [
