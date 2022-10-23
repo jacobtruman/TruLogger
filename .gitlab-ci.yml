@@ -30,6 +30,7 @@ test:
 
 run:
   script:
+    - pip install -q build
     - python -m build
   artifacts:
     paths:
