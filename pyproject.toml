@@ -6,7 +6,7 @@ py-modules = ["trulogger"]
 
 [project]
 name = 'TruLogger'
-version = '1.1.7'
+version = '1.1.8'
 
 authors = [
     {name = "Jacob Truman", email="jacob.truman@gmail.com"},
@@ -15,6 +15,6 @@ authors = [
 requires-python = ">=3.7, <4"
 
 [project.urls]
-homepage = "https://gitlab.com/jacobtruman/TruLogger"
-documentation = "https://gitlab.com/jacobtruman/TruLogger"
-repository = "https://gitlab.com/jacobtruman/TruLogger"
+homepage = "https://github.com/jacobtruman/TruLogger"
+documentation = "https://github.com/jacobtruman/TruLogger"
+repository = "https://github.com/jacobtruman/TruLogger"
