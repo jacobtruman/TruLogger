@@ -6,15 +6,13 @@ py-modules = ["trulogger"]
 
 [project]
 name = 'TruLogger'
-description = 'Logger package'
-long_description = 'Logger package'
-version = '1.1.6'
+version = '1.1.7'
 
 authors = [
     {name = "Jacob Truman", email="jacob.truman@gmail.com"},
 ]
 
-readme = "README.rst"
+requires-python = ">=3.7, <4"
 
 [project.urls]
 homepage = "https://gitlab.com/jacobtruman/TruLogger"
