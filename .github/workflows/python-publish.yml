@@ -38,4 +38,3 @@ jobs:
       with:
         username: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
-        verbose: true
